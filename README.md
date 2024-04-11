@@ -12,7 +12,6 @@ Egy olyan étterem weboldala ahol lassan készülő ételeket lehet rendelni. Be
 - Marhaételek
 - Halételek
 - Vegaételek
-- Többszemélyes tálak
 
 ## Kosár
 - Adatok: név, lakcím, telefonszám, időpont(minden ételnél más)
