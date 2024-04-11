@@ -7,11 +7,10 @@ Egy olyan étterem weboldala ahol lassan készülő ételeket lehet rendelni. Be
 - Díjak
 
 ## Webshop
-- Csirkeételek
+- Szárnyasételek
 - Sertésételelk
 - Marhaételek
-- Halételek
-- Vegaételek
+- Vegetáriánusételek
 
 ## Kosár
 - Adatok: név, lakcím, telefonszám, időpont(minden ételnél más)
