@@ -1,0 +1,32 @@
+#logo{
+    width: 200px;
+    height: 200px;
+    margin-left: 30%;
+}
+
+#nav{
+    background-color: rgb(253, 200, 52);
+}
+
+#jobb{
+    float: right;
+}
+
+ul{
+    background-color: rgb(253, 200, 52);
+    display: inline;
+    list-style-type: none;
+    
+}
+
+li{
+    font-size: 1.8rem;
+    display: inline;
+    color: white;
+    background-color: black;
+    padding: 1.5%;
+    border: 1px black solid;
+    border-radius: 15px;
+
+}
+
