@@ -6,7 +6,7 @@
 #logo{
     width: 200px;
     height: 200px;
-    margin-left: 30%;   
+    margin-left: 19%;   
     animation-name: logoanimation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -69,7 +69,7 @@ ul{
 
 }
 
-#rendelj{
+#rendelOption1{
     font-family: PermanentMarker-Regular;
     font-size: 1.8rem;
     display: inline;
@@ -78,7 +78,23 @@ ul{
     padding: 1.5%;
     border: 1px black solid;
     border-radius: 15px;
-    width: 15%;
+    width: 10%;
+    float: left;
+    margin-top: 3.25%;
+    margin-left: 2%;
+}
+
+#rendelOption2{
+    font-family: PermanentMarker-Regular;
+    font-size: 1.8rem;
+    display: inline;
+    color: white;
+    background-color: black;
+    padding: 0.5%;
+    border: 1px black solid;
+    border-radius: 15px;
+    width: 10%;
+    margin-left: 2%;
 }
 
 #types{
@@ -120,6 +136,13 @@ ul{
 #phoneNumber{
     display: none;
     font-weight: bolder;
+    font-family: PermanentMarker-Regular;
+    color: white;
+    background-color: black;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-left: 15%;
 }
 
 #map{
@@ -135,6 +158,7 @@ ul{
     position: relative;
     text-align: center;
     border-left: none;
+    margin-bottom: 2%;
 }
 
 body{
@@ -152,8 +176,3 @@ body{
     margin-left: 12%;
 }
 
-#rendelOption{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-
-}

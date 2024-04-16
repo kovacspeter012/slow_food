@@ -6,3 +6,17 @@ function Phone() {
 }
 
 phone.addEventListener('click', Phone)
+
+const select = document.getElementById('rendelOption2')
+
+
+function map() {
+    scrollBy(0, 1000) 
+}
+
+select.addEventListener('click', map)
+
+
+
+
+
