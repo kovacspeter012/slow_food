@@ -35,21 +35,40 @@ function categorySelection(event) {
         vegetarianusWrite();
    }
 }
-
+const foodDiv = document.querySelector('#foods');
 function szarnyasWrite() {
+    foodDiv.innerHTML = "";
     foods.forEach(element => {
         if (element.category == "Szárnyas") {
-            const div = document.createElement('div')
-            element.ToCard();
+            
+            foodDiv.appendChild(element.ToCard());
         }
     });
 }
 function marhaWrite() {
-    
+    foodDiv.innerHTML = "";
+    foods.forEach(element => {
+        if (element.category == "Marha") {
+            
+            foodDiv.appendChild(element.ToCard());
+        }
+    });
 }
 function sertesWrite() {
-    
+    foodDiv.innerHTML = "";
+    foods.forEach(element => {
+        if (element.category == "Sertés") {
+            
+            foodDiv.appendChild(element.ToCard());
+        }
+    });
 }
 function vegetarianusWrite() {
-    
+    foodDiv.innerHTML = "";
+    foods.forEach(element => {
+        if (element.category == "Vegetáriánus") {
+            
+            foodDiv.appendChild(element.ToCard());
+        }
+    });
 }

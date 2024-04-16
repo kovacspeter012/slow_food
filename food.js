@@ -1,11 +1,12 @@
 class Food{
     constructor(row){
         let splitted = row.split(';');
-        this.name = splitted[0];
-        this.category = splitted[1];
-        this.description = splitted[2];
-        this.price = Number(splitted[3]);
-        this.picture = splitted[4];
+        this.id = splitted[0]
+        this.name = splitted[1];
+        this.category = splitted[2];
+        this.description = splitted[3];
+        this.price = Number(splitted[4]);
+        this.picture = splitted[5];
     }
 
     static createFoods(foods_data){
@@ -40,12 +41,21 @@ class Food{
         p.innerHTML = this.description;
         div.appendChild(p);
 
+        const price = document.createElement('p');
+        price.classList.add("card-text");
+        price.innerHTML = this.price;
+        div.appendChild(price);
+
         const button = document.createElement('button');
         button.classList.add("btn");
         button.classList.add("btn-primary");
+        button.id = this.id;
         button.innerHTML = "Kosárba";
         div.appendChild(button);
 
+        cardDiv.appendChild(div);
+
+        return cardDiv;
     }
 }
 export {Food};
