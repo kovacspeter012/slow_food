@@ -12,6 +12,44 @@ foods.forEach(element => {
 const ul = document.querySelector('#categories');
 categories.forEach(element => {
     const li = document.createElement('li');
-    li.innerHTML = element;
+    const button = document.createElement('button');
+    button.innerHTML = element;
+    button.id = 'categoryId';
+    button.addEventListener('click', categorySelection);
+    li.appendChild(button)
     ul.appendChild(li);
 });
+
+
+function categorySelection(event) {
+   if (event.target.innerHTML == "Szárnyas") {
+        szarnyasWrite();
+   }
+   else if (event.target.innerHTML == "Marha") {
+        marhaWrite();
+   }
+   else if (event.target.innerHTML == "Sertés") {
+        sertesWrite();
+   }
+   else if (event.target.innerHTML == "Vegetáriánus"){
+        vegetarianusWrite();
+   }
+}
+
+function szarnyasWrite() {
+    foods.forEach(element => {
+        if (element.category == "Szárnyas") {
+            const div = document.createElement('div')
+            element.ToCard();
+        }
+    });
+}
+function marhaWrite() {
+    
+}
+function sertesWrite() {
+    
+}
+function vegetarianusWrite() {
+    
+}
