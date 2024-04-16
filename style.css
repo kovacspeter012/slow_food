@@ -1,11 +1,21 @@
+@font-face {
+    font-family: PermanentMarker-Regular;
+    src: url('PermanentMarker-Regular.ttf');
+}
+
 #logo{
     width: 200px;
     height: 200px;
-    margin-left: 30%;
+    margin-left: 30%;   
+    animation-name: logoanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #nav{
     background-color: rgb(253, 200, 52);
+
 }
 
 #jobb{
@@ -13,13 +23,53 @@
 }
 
 ul{
-    background-color: rgb(253, 200, 52);
     display: inline;
     list-style-type: none;
+
     
 }
 
-li{
+
+
+#contacts{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: 3.5%;
+    margin-right: 2%;
+
+}
+
+#insta{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+@keyframes logoanimation{
+    from {transform:rotateZ(0deg);}
+    to {transform:rotateZ(360deg);}
+
+}
+
+#welcome{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 70%;
+    padding: 2%;
+    margin-top: 5%;
+    border: 1px solid black;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    line-height: 3;
+    font-weight: bold;
+    position: relative;
+
+}
+
+#rendelj{
+    font-family: PermanentMarker-Regular;
     font-size: 1.8rem;
     display: inline;
     color: white;
@@ -27,6 +77,39 @@ li{
     padding: 1.5%;
     border: 1px black solid;
     border-radius: 15px;
+}
 
+#types{
+    background-color: rgba(253, 200, 52, 0.8);
+    color: black;
+    width: 40%;
+    padding: 2%;
+    border: 1px solid rgba(253, 200, 52, 0.8);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    line-height: 3;
+    font-weight: bold;
+    float: right;
+    text-align: center;
+    margin-top: -5%;
+    position: relative;
+
+}
+
+#types h3{
+    font-family: PermanentMarker-Regular;
+    font-weight: bolder;
+}
+
+#video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#container{
+    margin-top: -30%;
 }
 
