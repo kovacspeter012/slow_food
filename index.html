@@ -10,16 +10,22 @@
 <body>
     <div id="nav">
         <ul>
-           <li id="rendelj">Rendelj most!</li>
+           <select  id="rendelj">
+            <option id="rendelOption" value="">Rendelek!</option>
+            <option id="rendelOption" value="">Étterembe látogatok</option>
+           </select>
            <img src="logo.png" id="logo" alt="">
-           <img id="contacts" src="insta.png" alt="">
-           <img id="contacts" src="gmail.png" alt="">
-           <img id="contacts" src="facebook.png" alt="">
-           <img id="contacts" src="phone.png" alt="">
+           <a href="https://www.instagram.com/sloo0630?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img id="contacts" src="insta.png" alt=""></a>
+           <a href="mailto: fazekboti@gmail.com"><img id="contacts" src="gmail.png" alt=""></a>
+           <a href="https://www.facebook.com/slo0630?locale=hu_HU"><img id="contacts" src="facebook.png" alt=""></a>
+           <img class="phone" id="contacts" src="phone.png" alt="">
+           <p id="phoneNumber">+36706544789</p>
+
        </div>
+       <br>
     <video autoplay muted loop>
 
-        <source src="video.mp4" type="video/mp4" id="video">
+        <source class="w-25" src="video.mp4" type="video/mp4" id="video">
 
     </video>
 <div id="container">
@@ -51,8 +57,14 @@
             <li>Vegetáriánusételek</li>
         </ul>
     </div>
+
+    <div id="map">
+        <h3>Ha esetleg éttermünk érdekelne:</h3>
+        <br>
+        <iframe id="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d687653.1607971455!2d16.993616134720266!3d47.6816008197897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc3d0c48b201%3A0x15a963501d307de3!2sSeoul%20House%20Korean%20Restaurant!5e0!3m2!1shu!2shu!4v1713267439920!5m2!1shu!2shu" width="400" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </div>
 
-
+<script src="script2.js"></script>
 </body>
 </html>

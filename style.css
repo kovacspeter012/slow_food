@@ -57,14 +57,15 @@ ul{
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     width: 70%;
-    padding: 2%;
-    margin-top: 5%;
-    border: 1px solid black;
+    padding: 3%;
+    margin-top: -50%;
+    border: 1px solid white;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     line-height: 3;
     font-weight: bold;
     position: relative;
+    border-left: none;
 
 }
 
@@ -77,21 +78,24 @@ ul{
     padding: 1.5%;
     border: 1px black solid;
     border-radius: 15px;
+    width: 15%;
 }
 
 #types{
     background-color: rgba(253, 200, 52, 0.8);
     color: black;
     width: 40%;
-    padding: 2%;
-    border: 1px solid rgba(253, 200, 52, 0.8);
+    padding: 1%;
+    border: 1px solid black;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     line-height: 3;
     font-weight: bold;
     float: right;
     text-align: center;
-    margin-top: -5%;
+    margin-top: -4.5%;
+    position: relative;
+    border-right: none;
 
 }
 
@@ -106,9 +110,50 @@ ul{
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+
 }
 
 #container{
     margin-top: -30%;
 }
 
+#phoneNumber{
+    display: none;
+    font-weight: bolder;
+}
+
+#map{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    margin-top: 8%;
+    padding: 2%;
+    border: 1px solid black;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    line-height: 3;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    border-left: none;
+}
+
+body{
+    background-color: black
+}
+
+#mapFrame{
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+#map h3{
+    font-family: PermanentMarker-Regular;
+    font-weight: bolder;
+    margin-left: 12%;
+}
+
+#rendelOption{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+}
