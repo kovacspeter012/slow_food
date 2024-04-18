@@ -5,3 +5,32 @@
 #foods{
     display: flex;
 }
+
+#cart button{
+    width: 100px;
+    height: 100px;
+    float: right;
+    border: none;
+    background-color: rgb(253, 200, 52);
+    margin-right: 2%;
+}
+
+#cart img{
+    width: 100px;
+    height: 100px;
+}
+
+#cart{
+    background-color: rgb(253, 200, 52);
+    padding: 1%;
+    overflow: auto;
+}
+
+#shoppingList{
+    border: 1px solid black;
+    background-color: rgba(253, 200, 52, 0.8);
+    float: right;
+    width: 20%;
+    min-height: 100vh;
+    display: none;
+}

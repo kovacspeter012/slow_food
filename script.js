@@ -72,3 +72,23 @@ function vegetarianusWrite() {
         }
     });
 }
+
+
+const cartButton = document.getElementById('shoppingCart')
+const shoppingList = document.getElementById('shoppingList')
+
+
+
+
+function shoppingCart(params) {
+    shoppingList.style.display = 'block'
+    if (shoppingList.innerHTML == ''){
+        shoppingList.innerHTML = 'A kosarad üres.'
+    }
+
+}
+
+cartButton.addEventListener('click', shoppingCart)
+
+
+
