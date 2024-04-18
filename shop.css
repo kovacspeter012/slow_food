@@ -1,18 +1,43 @@
+@font-face {
+    font-family: PermanentMarker-Regular;
+    src: url('PermanentMarker-Regular.ttf');
+}
+
 #categoryId{
-    background-color: white;
+
     border: none;
+    background-color: black;
 }
 #foods{
     display: flex;
 }
 
 #cart button{
-    width: 100px;
-    height: 100px;
-    float: right;
-    border: none;
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+    border-radius: 80px;
     background-color: rgb(253, 200, 52);
-    margin-right: 2%;
+
+    
+}
+
+@keyframes cart{
+    from {transform:rotateX(0deg);}
+    to {transform:rotateX(360deg);}
+
+}
+
+#cart button:hover{
+    background-color: rgb(184, 143, 31);
+
+}
+
+#cart button:hover img{
+    animation-name: cart;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;   
+
 }
 
 #cart img{
@@ -24,6 +49,16 @@
     background-color: rgb(253, 200, 52);
     padding: 1%;
     overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart h1{
+    font-family: PermanentMarker-Regular;
+    font-weight: bolder;
+    display: inline-block;
+    text-align: center;
 }
 
 #shoppingList{
@@ -33,4 +68,34 @@
     width: 20%;
     min-height: 100vh;
     display: none;
+    padding: 1%;
+}
+
+
+#categories{
+    text-align: center;
+    list-style-type: none;
+    margin-top: 5%;
+    font-family: PermanentMarker-Regular;
+    font-size: 2rem;
+    line-height: 700%;
+    color: white;
+
+}
+
+#container1{
+    background-color: black;
+}
+
+
+#pic1{
+    float: left;
+    height: 200px;
+    width: 250px;
+}
+
+#pic2{
+    float: right;
+    height: 200px;
+    width: 250px;
 }

@@ -23,16 +23,18 @@ class Food{
     ToCard(){
         const cardDiv = document.createElement('div');
         cardDiv.classList.add('card');
-        cardDiv.style = "width: 18rem;";
+        cardDiv.style = "width: 18rem; margin: auto; height: 31rem; color: white;";
 
         const img = document.createElement('img');
         img.classList.add("card-img-top");
         img.src = this.picture;
         img.alt = "Étel képe";
+        img.style = 'height: 20rem'
         cardDiv.appendChild(img);
 
         const div = document.createElement('div');
         div.classList.add("card-body");
+        div.style = 'background-color: black'
 
         const h5 = document.createElement('h5');
         h5.classList.add("card-title");
@@ -51,9 +53,10 @@ class Food{
 
         const button = document.createElement('button');
         button.classList.add("btn");
-        button.classList.add("btn-primary");
+        button.style = 'background-color: rgb(253, 200, 52);'
         button.id = this.id;
         button.addEventListener('click', this.ToCart)
+        
         button.innerHTML = "Kosárba";
         div.appendChild(button);
 
@@ -70,10 +73,11 @@ class Food{
         foods.forEach(element => {
             if(event.target.id == element.id)    {
 
+
                 const cardDiv = document.createElement('div');
                 cardDiv.classList.add('card');
                 cardDiv.dataset.id = element.id
-                cardDiv.style = "width: 18rem;";
+                cardDiv.style = "width: 18rem; color: white; background-color: rgba(0, 0, 0, 0.8); margin: auto; margin-top: 4%;"
     
         
                 const div = document.createElement('div');
@@ -82,11 +86,13 @@ class Food{
                 const h5 = document.createElement('h5');
                 h5.classList.add("card-title");
                 h5.innerHTML = element.name;
+                h5.style = " font-weight: bolder; font-family: PermanentMarker-Regular;"
                 div.appendChild(h5);
         
                 const p = document.createElement('p');
                 p.classList.add("card-text");
                 p.innerHTML = element.description;
+                p.style = "font-family: 'Courier New', Courier, monospace;"
                 div.appendChild(p);
         
                 const price = document.createElement('p');
@@ -97,12 +103,18 @@ class Food{
                 const button = document.createElement('button');
                 button.classList.add("btn");
                 button.classList.add("btn-danger");
-                button.addEventListener('click', (event) => {
+                button.id = element.id;
 
-                const deleteDiv = document.querySelector(`[data-id="${event.target.id}"]`)
-                console.log(deleteDiv);
+
+
+                button.addEventListener('click', (event) => 
+                {
+
+                    const deleteDiv = document.querySelector(`[data-id="${event.target.id}"]`)
+                    deleteDiv.remove();
                             
                 });
+
                 button.innerHTML = "Törlés";
                 div.appendChild(button);
 

@@ -9,6 +9,8 @@ foods.forEach(element => {
         categories.push(element.category)
     }
 });
+
+
 const ul = document.querySelector('#categories');
 categories.forEach(element => {
     const li = document.createElement('li');
@@ -16,6 +18,8 @@ categories.forEach(element => {
     button.innerHTML = element;
     button.id = 'categoryId';
     button.addEventListener('click', categorySelection);
+    button.style = 'background-color: black;'
+    button.style = 'color: white'
     li.appendChild(button)
     ul.appendChild(li);
 });
@@ -23,6 +27,7 @@ categories.forEach(element => {
 
 function categorySelection(event) {
    if (event.target.innerHTML == "Szárnyas") {
+
         szarnyasWrite();
    }
    else if (event.target.innerHTML == "Marha") {
@@ -83,7 +88,15 @@ const shoppingList = document.getElementById('shoppingList')
 function shoppingCart(params) {
     shoppingList.style.display = 'block'
     if (shoppingList.innerHTML == ''){
-        shoppingList.innerHTML = 'A kosarad üres.'
+        const empty = document.createElement('p')
+        const noneImage = document.createElement('img')
+        noneImage.src = 'none.png'
+        noneImage.style = 'margin-top: 60%'
+        empty.innerHTML = 'A kosarad üres.'
+        empty.style = 'font-family: PermanentMarker-Regular; text-align: center; font-size: 1.8rem'
+        shoppingList.appendChild(empty)
+        shoppingList.appendChild(noneImage)
+        shoppingList.style = 'background-color: rgba(253, 200, 52, 0.6);'
     }
 
 }
