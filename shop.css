@@ -10,6 +10,7 @@
 }
 #foods{
     display: flex;
+
 }
 
 #cart button{
@@ -66,7 +67,7 @@
     background-color: rgba(253, 200, 52, 0.8);
     float: right;
     width: 20%;
-    min-height: 100vh;
+    min-height: 135.5vh;
     display: none;
     padding: 1%;
 }
@@ -88,14 +89,16 @@
 }
 
 
-#pic1{
-    float: left;
-    height: 200px;
-    width: 250px;
+#hr{
+    width: 80%;
+    border: 2px solid rgba(0, 0, 0, 1);   
+    color: rgba(0, 0, 0, 1);
+    opacity: 1;
+    margin: auto;
+    margin-top: 4%;
 }
 
-#pic2{
-    float: right;
-    height: 200px;
-    width: 250px;
+#foodsLi:hover{
+    background-color: rgba(253, 200, 52, 0.8);
+    transition-delay: 0.2s;
 }

@@ -23,7 +23,7 @@ class Food{
     ToCard(){
         const cardDiv = document.createElement('div');
         cardDiv.classList.add('card');
-        cardDiv.style = "width: 18rem; margin: auto; height: 31rem; color: white;";
+        cardDiv.style = "width: 32rem; margin: auto; height: 18rem; color: white; margin-top: 5%;";
 
         const img = document.createElement('img');
         img.classList.add("card-img-top");

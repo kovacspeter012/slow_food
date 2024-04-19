@@ -14,6 +14,7 @@ foods.forEach(element => {
 const ul = document.querySelector('#categories');
 categories.forEach(element => {
     const li = document.createElement('li');
+    li.id = 'foodsLi'
     const button = document.createElement('button');
     button.innerHTML = element;
     button.id = 'categoryId';
@@ -90,8 +91,8 @@ function shoppingCart(params) {
     if (shoppingList.innerHTML == ''){
         const empty = document.createElement('p')
         const noneImage = document.createElement('img')
-        noneImage.src = 'none.png'
-        noneImage.style = 'margin-top: 60%'
+        noneImage.src = 'logo.png'
+        noneImage.style = 'margin-top: 80%; width: 350px; height: 350px'
         empty.innerHTML = 'A kosarad üres.'
         empty.style = 'font-family: PermanentMarker-Regular; text-align: center; font-size: 1.8rem'
         shoppingList.appendChild(empty)
