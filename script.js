@@ -30,15 +30,23 @@ function categorySelection(event) {
    if (event.target.innerHTML == "Szárnyas") {
 
         szarnyasWrite();
+        window.scrollBy(0, 1500) 
+
    }
    else if (event.target.innerHTML == "Marha") {
         marhaWrite();
+        window.scrollBy(0, 1500) 
+
    }
    else if (event.target.innerHTML == "Sertés") {
         sertesWrite();
+        window.scrollBy(0, 1500) 
+
    }
    else if (event.target.innerHTML == "Vegetáriánus"){
         vegetarianusWrite();
+        window.scrollBy(0, 1500) 
+
    }
 }
 const foodDiv = document.querySelector('#foods');
@@ -101,6 +109,16 @@ function shoppingCart(params) {
     }
 
 }
+
+const upButton = document.getElementById('up')
+
+function scrollUp() {
+    window.scrollBy(0, -1500) 
+    console.log('asd');
+
+}
+
+upButton.addEventListener('click', scrollUp)
 
 cartButton.addEventListener('click', shoppingCart)
 
