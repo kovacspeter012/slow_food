@@ -1,6 +1,5 @@
 import foods_data from './foods_data.js';
 
-
 class Food{
     constructor(row){
         let splitted = row.split(';');
@@ -112,6 +111,7 @@ class Food{
 
                     const deleteDiv = document.querySelector(`[data-id="${event.target.id}"]`)
                     deleteDiv.remove();
+                    localStorage.removeItem(id);
                             
                 });
 
@@ -121,6 +121,8 @@ class Food{
                 cardDiv.appendChild(div);
                 
                 shoppingList.appendChild(cardDiv);
+
+                localStorage.setItem(element.id, JSON.stringify(element));
             }
 
                      
