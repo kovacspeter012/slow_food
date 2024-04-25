@@ -1,6 +1,9 @@
 import foods_data from './foods_data.js';
 import { Food } from './food.js';
 
+const shoppingList = document.getElementById('shoppingList')
+loadLocalStorage();
+
 let foods = Food.createFoods(foods_data);
 
 let categories = []
@@ -89,7 +92,6 @@ function vegetarianusWrite() {
 
 
 const cartButton = document.getElementById('shoppingCart')
-const shoppingList = document.getElementById('shoppingList')
 
 
 
@@ -122,5 +124,61 @@ upButton.addEventListener('click', scrollUp)
 
 cartButton.addEventListener('click', shoppingCart)
 
+function loadLocalStorage() {
+    var storetFoods = [],
+        keys = Object.keys(localStorage),
+        i = keys.length;
 
+    while ( i-- ) {
+        storetFoods.push( JSON.parse(localStorage.getItem(keys[i])) );
+    }
+    if (storetFoods != null) {
+        storetFoods.forEach(element => {
+            const cardDiv = document.createElement('div');
+            cardDiv.classList.add('card');
+            cardDiv.dataset.id = element.id
+            cardDiv.style = "width: 18rem; color: white; background-color: rgba(0, 0, 0, 0.8); margin: auto; margin-top: 4%;"
+    
+            const div = document.createElement('div');
+            div.classList.add("card-body");
+    
+            const h5 = document.createElement('h5');
+            h5.classList.add("card-title");
+            h5.innerHTML = element.name;
+            h5.style = " font-weight: bolder; font-family: PermanentMarker-Regular;"
+            div.appendChild(h5);
+    
+            const p = document.createElement('p');
+            p.classList.add("card-text");
+            p.innerHTML = element.description;
+            p.style = "font-family: 'Courier New', Courier, monospace;"
+            div.appendChild(p);
+    
+            const price = document.createElement('p');
+            price.classList.add("card-text");
+            price.innerHTML = element.price + " Ft";
+            div.appendChild(price);
+
+            const button = document.createElement('button');
+            button.classList.add("btn");
+            button.classList.add("btn-danger");
+            button.id = element.id;
+            button.addEventListener('click', (event) => 
+            {
+                const deleteDiv = document.querySelector(`[data-id="${event.target.id}"]`)
+                deleteDiv.remove();
+                localStorage.removeItem(event.target.id);
+                        
+            });
+            button.innerHTML = "Törlés";
+
+            div.appendChild(button);
+            
+    
+            cardDiv.appendChild(div);
+                    
+            shoppingList.appendChild(cardDiv);
+        });
+    }
+}
 
