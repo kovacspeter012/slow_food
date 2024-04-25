@@ -1,0 +1,10 @@
+@font-face {
+    font-family: PermanentMarker-Regular;
+    src: url('PermanentMarker-Regular.ttf');
+}
+
+h1{
+    font-family: PermanentMarker-Regular;
+    text-align: center;
+    margin-bottom: 5%;
+}

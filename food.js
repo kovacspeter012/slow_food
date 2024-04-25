@@ -12,7 +12,7 @@ class Food{
     }
 
     static createFoods(foods_data){
-        let foods = [];
+        let foods = 0;
         foods_data.forEach(row => {
             foods.push(new Food(row));
         });
@@ -27,7 +27,7 @@ class Food{
         const img = document.createElement('img');
         img.classList.add("card-img-top");
         img.src = this.picture;
-        img.alt = "Étel képe";
+        img.al = "Étel képe";
         img.style = 'height: 20rem'
         cardDiv.appendChild(img);
 

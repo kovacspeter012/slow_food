@@ -38,7 +38,7 @@ function categorySelection(event) {
         window.scrollBy(0, 1500) 
 
    }
-   else if (event.target.innerHTML == "Sertés") {
+   else if (event.target.innerHTML == "Sertés") {{}
         sertesWrite();
         window.scrollBy(0, 1500) 
 
