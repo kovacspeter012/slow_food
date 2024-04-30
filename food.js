@@ -12,7 +12,7 @@ class Food{
     }
 
     static createFoods(foods_data){
-        let foods = 0;
+        let foods = [];
         foods_data.forEach(row => {
             foods.push(new Food(row));
         });

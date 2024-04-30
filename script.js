@@ -98,6 +98,7 @@ const cartButton = document.getElementById('shoppingCart')
 
 function shoppingCart(params) {
     shoppingList.style.display = 'block'
+
     if (shoppingList.innerHTML == ''){
         const empty = document.createElement('p')
         const noneImage = document.createElement('img')
@@ -109,6 +110,8 @@ function shoppingCart(params) {
         shoppingList.appendChild(noneImage)
         shoppingList.style = 'background-color: rgba(253, 200, 52, 0.6);'
     }
+
+    
 
 }
 
