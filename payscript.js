@@ -60,4 +60,5 @@ function lead() {
     while ( i-- ) {
        localStorage.removeItem(keys[i]);
     }
+    alert("Rendelés leadva")
 }
