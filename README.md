@@ -4,7 +4,6 @@ Egy olyan étterem weboldala ahol lassan készülő ételeket lehet rendelni. Be
 
 ## Bemutatkozás
 - Történet
-- Díjak
 
 ## Webshop
 - Szárnyasételek
@@ -13,5 +12,5 @@ Egy olyan étterem weboldala ahol lassan készülő ételeket lehet rendelni. Be
 - Vegetáriánusételek
 
 ## Kosár
-- Adatok: név, lakcím, telefonszám, időpont(minden ételnél más)
-- Rendelés kiírása fájlba
+- Adatok: név, lakcím, telefonszám
+- Rendelés tárolása local storageban leadásig
