@@ -7,4 +7,24 @@ h1{
     font-family: PermanentMarker-Regular;
     text-align: center;
     margin-bottom: 5%;
+    color: white;
+}
+
+#payCart{
+    background-color: rgb(253, 200, 52);
+    padding: 2%;
+    border: none;
+    border-radius: 12px;
+}
+
+.container{
+    background-color: black;
+}
+
+form{
+    color: white;
+}
+
+#totalPay{
+    color: white;
 }

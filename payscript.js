@@ -46,7 +46,8 @@ function loadLocalStorage(element) {
         cart.appendChild(cardDiv);
     });
 
-    totalPay.innerHTML = sumPay;
+    totalPay.innerHTML = `Teljes összeg: ${sumPay}Ft`;
+    totalPay.style = 'text-align: center; margin-top: 1%; margin-bottom: 2%; font-weight: bolder'
 
 }
 

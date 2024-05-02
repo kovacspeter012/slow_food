@@ -96,12 +96,14 @@ const cartButton = document.getElementById('shoppingCart')
 
 
 
+
 function shoppingCart(params) {
-    shoppingList.style.display = 'block'
+
 
     if (shoppingList.innerHTML == ''){
         const empty = document.createElement('p')
         const noneImage = document.createElement('img')
+
         noneImage.src = 'logo.png'
         noneImage.style = 'margin-top: 80%; width: 350px; height: 350px'
         empty.innerHTML = 'A kosarad üres.'
@@ -109,8 +111,16 @@ function shoppingCart(params) {
         shoppingList.appendChild(empty)
         shoppingList.appendChild(noneImage)
         shoppingList.style = 'background-color: rgba(253, 200, 52, 0.6);'
-    }
 
+    }
+    shoppingList.style.display = 'block'
+    const link = document.createElement('a')
+    const pay = document.createElement('button')
+    pay.innerHTML = 'Fizetés'
+    link.href = 'pay.html'
+    pay.style = 'margin-left: 40%; margin-top: 20%; background-color: black; color: white; border: none; border-radius: 12px; padding: 4%; text-decoration: none; font-size: larger'
+    link.append(pay)
+    shoppingList.appendChild(link)
     
 
 }
