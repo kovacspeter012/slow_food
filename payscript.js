@@ -1,5 +1,7 @@
 const cart = document.querySelector('#payCart');
 const totalPay = document.querySelector('#totalPay');
+const payButton = document.querySelector('#order');
+payButton.addEventListener('click', lead)
 loadLocalStorage(cart);
 
 
@@ -46,4 +48,15 @@ function loadLocalStorage(element) {
 
     totalPay.innerHTML = sumPay;
 
+}
+
+function lead() {
+    let sumPay = 0;
+    var foods = [],
+        keys = Object.keys(localStorage),
+        i = keys.length;
+
+    while ( i-- ) {
+       localStorage.removeItem(keys[i]);
+    }
 }
